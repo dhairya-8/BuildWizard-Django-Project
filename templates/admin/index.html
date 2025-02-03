@@ -1,0 +1,208 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+    
+<head>
+        
+        <meta charset="utf-8" />
+        <title>Dashboard | BuildWizard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="{% static 'admin/assets/images/favicon.ico' %}">
+
+        <!-- Bootstrap Css -->
+        <link href="{% static 'admin/assets/css/bootstrap.min.css' %}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="{% static 'admin/assets/css/icons.min.css' %}" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="{% static 'admin/assets/css/app.min.css' %}" id="app-style" rel="stylesheet" type="text/css" />
+        <!-- Preloader Css-->
+        <link href="{% static 'admin/assets/css/preloader.css' %}" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body data-sidebar="dark" data-layout-mode="light">
+
+        <!-- Page Loader -->
+        <div class="page-loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div> 
+        <!-- Begin page -->
+        <div id="layout-wrapper">   
+           
+            {%include "admin/header.html" %}
+
+            <!-- ========== Left Sidebar Start ========== -->
+             {% include "admin/sidebar.html" %}
+            <!-- Left Sidebar End -->
+
+            
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                    <h4 class="mb-sm-0 font-size-18">Admin Dashboard</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <div class="row">
+                                    {% comment %} Order {% endcomment %}
+                                    <div class="col-md-5">
+                                        <div class="card mini-stats-wid">
+                                            <div class="card-body">
+                                                <div class="d-flex">
+                                                    <div class="flex-grow-1">
+                                                        <p class="text-muted fw-medium">Orders</p>
+                                                        <h5 class="mb-0"><a href="/adminside/displayorders" style="color: black;">View Orders</a></h4>
+                                                    </div>
+
+                                                    <div class="flex-shrink-0 align-self-center">
+                                                        <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
+                                                            <span class="avatar-title">
+                                                                <i class="bx bx-copy-alt font-size-24"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% comment %} Payment {% endcomment %}
+                                    <div class="col-md-5">
+                                        <div class="card mini-stats-wid">
+                                            <div class="card-body">
+                                                <div class="d-flex">
+                                                    <div class="flex-grow-1">
+                                                        <p class="text-muted fw-medium">Details</p>
+                                                        <h5 class="mb-0"><a href="/adminside/displayorderdetails" style="color: black;">View OrderDetails</a></h4>
+                                                    </div>
+
+                                                    <div class="flex-shrink-0 align-self-center">
+                                                        <div class="mini-stat-icon avatar-sm rounded-circle bg-primary">
+                                                            <span class="avatar-title">
+                                                                <i class="bx bxs-store-alt font-size-24"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% comment %} Feedback {% endcomment %}
+                                    <div class="col-md-5">
+                                        <div class="card mini-stats-wid">
+                                            <div class="card-body">
+                                                <div class="d-flex">
+                                                    <div class="flex-grow-1">
+                                                        <p class="text-muted fw-medium">Brands</p>
+                                                        <h5 class="mb-0"><a href="/adminside/displaybrand" style="color: black;">View Brands</a></h4>
+                                                    </div>
+
+                                                    <div class="flex-shrink-0 align-self-center ">
+                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                            <span class="avatar-title rounded-circle bg-primary">
+                                                                <i class="bx bx-archive-in font-size-24"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% comment %} Community Forums {% endcomment %}
+                                    <div class="col-md-5">
+                                        <div class="card mini-stats-wid">
+                                            <div class="card-body">
+                                                <div class="d-flex">
+                                                    <div class="flex-grow-1">
+                                                        <p class="text-muted fw-medium">Forums</p>
+                                                        <h5 class="mb-0"><a href="/adminside/forums" style="color: black;">View C-Forums</a></h4>
+                                                    </div>
+
+                                                    <div class="flex-shrink-0 align-self-center">
+                                                        <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
+                                                            <span class="avatar-title rounded-circle bg-primary">
+                                                                <i class="bx bx-purchase-tag-alt font-size-24"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <!-- end row -->
+
+                            
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        
+                        <!-- end row -->
+
+                      
+                        <!-- end row -->
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                <!-- Transaction Modal -->
+                
+                <!-- end modal -->
+
+                <!-- subscribeModal -->
+               
+                <!-- end modal -->
+
+                <footer class="footer">
+                  
+                </footer>
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="{% static 'admin/assets/libs/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'admin/assets/libs/metismenu/metisMenu.min.js' %}"></script>
+        <script src="{% static 'admin/assets/libs/simplebar/simplebar.min.js' %}"></script>
+        <script src="{% static 'admin/assets/libs/node-waves/waves.min.js' %}"></script>
+
+        <!-- apexcharts -->
+        <script src="{% static 'admin/assets/libs/apexcharts/apexcharts.min.js' %}"></script>
+
+        <!-- dashboard init -->
+        <script src="{% static 'admin/assets/js/pages/dashboard.init.js' %}"></script>
+
+        <!-- App js -->
+        <script src="{% static 'admin/assets/js/app.js' %}"></script>
+        
+        <!-- Preloader js -->
+        <script src="{% static 'admin/assets/js/preloader.js' %}"></script>
+    </body>
+
+</html>

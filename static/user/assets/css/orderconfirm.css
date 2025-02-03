@@ -1,0 +1,142 @@
+.checkout__totals {
+  border: 1px solid #222;
+  margin-bottom: 1.25rem;
+  padding: 2.5rem 2.5rem 0.5rem;
+  width: 26.25rem;
+}
+
+@media (max-width: 1199.98px) {
+  .checkout__totals {
+    width: 100%;
+  }
+}
+
+.checkout__totals>h3,
+.checkout__totals>.h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.checkout__totals table {
+  width: 100%;
+}
+
+.checkout__totals .checkout-cart-items thead th {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 0.875rem 0;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+.checkout__totals .checkout-cart-items tbody td {
+  padding: 0.40625rem 0;
+  color: #767676;
+}
+
+.checkout__totals .checkout-cart-items tbody tr:first-child td {
+  padding-top: 0.8125rem;
+}
+
+.checkout__totals .checkout-cart-items tbody tr:last-child td {
+  padding-bottom: 0.8125rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.checkout__totals .checkout-totals th,
+.checkout__totals .checkout-totals td {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 1.275rem 0;
+  font-size: 1.275rem;
+  font-weight: 500;
+}
+
+.checkout__totals .checkout-totals tr:last-child th,
+.checkout__totals .checkout-totals tr:last-child td {
+  border-bottom: 0;
+}
+
+.order-complete {
+  width: 100rem;
+  max-width: 100%;
+  margin: 3.125rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.order-complete__message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-complete__message svg {
+  margin-bottom: 1.25rem;
+}
+
+.order-complete__message h3,
+.order-complete__message .h3 {
+  font-size: 2.1875rem;
+  text-align: center;
+}
+
+.order-complete__message p {
+  color: #767676;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.order-complete .order-info {
+  width: 100%;
+  border: 2px dashed #767676;
+  padding: 2.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .order-complete .order-info {
+    flex-direction: column;
+  }
+}
+
+.order-complete .order-info__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex-grow: 1;
+}
+
+.order-complete .order-info__item label {
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #767676;
+}
+
+.order-complete .order-info__item span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.order-complete .checkout__totals {
+  width: 100%;
+
+}
+
+.order-complete .checkout__totals .checkout-cart-items thead th:last-child {
+  text-align: right;
+}
+
+.order-tracking {
+  width: 31.25rem;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.order-tracking .btn-track {
+  height: 3.75rem;
+  font-size: 1.875rem;
+}

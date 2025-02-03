@@ -1,0 +1,1218 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BuildWizard | Home</title>
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="Molla - Bootstrap eCommerce Template">
+    <meta name="author" content="p-themes">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'user/assets/images/icons/bwlfb.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'user/assets/images/icons/bwlfb.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'user/assets/images/icons/bwlfb.png' %}">
+    <link rel="manifest" href="{% static 'user/assets/images/icons/site.html' %}">
+    <link rel="mask-icon" href="{% static 'user/assets/images/icons/safari-pinned-tab.svg' %}" color="#666666">
+    <link rel="shortcut icon" href="{% static 'user/assets/images/icons/.ico' %}">
+    <meta name="apple-mobile-web-app-title" content="Molla">
+    <meta name="application-name" content="Molla">
+    <meta name="msapplication-TileColor" content="#cc9966">
+    <meta name="msapplication-config" content="{% static 'user/assets/images/icons/browserconfig.xml' %}">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" href="{% static 'user/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'user/assets/css/plugins/owl-carousel/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'user/assets/css/plugins/magnific-popup/magnific-popup.css' %}">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="{% static 'user/assets/css/style.css' %}">
+    <!-- Preloader CSS Internal -->
+    <link rel="stylesheet" href="{% static 'user/assets/css/preloader.css' %}">
+
+</head>
+
+<body>
+    <!-- Preloader Div  -->
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+
+
+    <div class="page-wrapper">
+        
+        <!-- Header file include -->
+        {%include "user/header.html" %}
+        <!-- End header -->
+
+        <main class="main">
+            <div class="intro-section bg-lighter pt-5 pb-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="intro-slider-container slider-container-ratio slider-container-1 mb-2 mb-lg-0">
+                                <div class="intro-slider intro-slider-1 owl-carousel owl-simple owl-light owl-nav-inside"
+                                    data-toggle="owl" data-owl-options='{
+                                        "nav": false, 
+                                        "responsive": {
+                                            "768": {
+                                                "nav": true
+                                            }
+                                        }
+                                    }'>
+                                    <div class="intro-slide">
+                                        <figure class="slide-image">
+                                            <picture>
+                                                <source media="(max-width: 480px)"
+                                                    srcset="{% static 'user/assets/images/slider/cp1.jpeg' %}">
+                                                <img src="{% static 'user/assets/images/slider/cp1.jpeg' %}" alt="Image Desc">
+                                            </picture>
+                                        </figure><!-- End .slide-image -->
+
+                                        <div class="intro-content">
+                                            <h3 class="intro-subtitle"></h3>
+                                            <!-- End .h3 intro-subtitle -->
+                                            <h2 class="intro-title">Build Your<br>Custom PC </h2>
+                                            <!-- End .intro-title -->
+
+                                            <a href="/userside/customization" class="btn btn-outline-white">
+                                                <span>SHOP NOW</span>
+                                                <i class="icon-long-arrow-right"></i>
+                                            </a>
+                                        </div><!-- End .intro-content -->
+                                    </div><!-- End .intro-slide -->
+
+                                    <div class="intro-slide">
+                                        <figure class="slide-image">
+                                            <picture>
+                                                <source media="(max-width: 480px)"
+                                                    srcset="{% static 'user/assets/images/slider/rtx.jpg' %}">
+                                                <img src="{% static 'user/assets/images/slider/rtx.jpg' %}" alt="Image Desc">
+                                            </picture>
+                                        </figure><!-- End .slide-image -->
+
+                                        <div class="intro-content">
+                                            <h3 class="intro-subtitle">Try our </h3>
+                                            <!-- End .h3 intro-subtitle -->
+                                            <h1 class="intro-title">New Arrivals</h1><!-- End .intro-title -->
+
+                                            <a href="/userside/products" class="btn btn-outline-white">
+                                                <span>SHOP NOW</span>
+                                                <i class="icon-long-arrow-right"></i>
+                                            </a>
+                                        </div><!-- End .intro-content -->
+                                    </div><!-- End .intro-slide -->
+
+                                    <div class="intro-slide">
+                                        <figure class="slide-image">
+                                            <picture>
+                                                <source media="(max-width: 480px)"
+                                                    srcset="{% static 'user/assets/images/slider/msimb.jpg' %}">
+                                                <img src="{% static 'user/assets/images/slider/msimb.jpg' %}" alt="Image Desc">
+                                            </picture>
+                                        </figure><!-- End .slide-image -->
+
+                                        <div class="intro-content">
+                                            <h3 class="intro-subtitle">Motherboard</h3>
+                                            <!-- End .h3 intro-subtitle -->
+                                            <h1 class="intro-title">New Gen <br> MSI</h1>
+                                            <!-- End .intro-title -->
+
+                                            <a href="/userside/products" class="btn btn-outline-white">
+                                                <span>SHOP NOW</span>
+                                                <i class="icon-long-arrow-right"></i>
+                                            </a>
+                                        </div><!-- End .intro-content -->
+                                    </div><!-- End .intro-slide -->
+                                </div><!-- End .intro-slider owl-carousel owl-simple -->
+
+                                <span class="slider-loader"></span><!-- End .slider-loader -->
+                            </div><!-- End .intro-slider-container -->
+                        </div><!-- End .col-lg-8 -->
+                        <div class="col-lg-4">
+                            <div class="intro-banners">
+                                <div class="row row-sm">
+                                    <div class="col-md-6 col-lg-12">
+                                        <div class="banner banner-display">
+                                            <a href="/userside/prebuilt">
+                                                <img src="{% static 'user/assets/images/banners/home/intro/cpc.jpg' %}" alt="Banner">
+                                            </a>
+
+                                            <div class="banner-content">
+                                                <h4 class="banner-subtitle text-darkwhite"><a href="/userside/prebuilt">Pre-Builts</a>
+                                                </h4><!-- End .banner-subtitle -->
+                                                <h3 class="banner-title text-white"><a href="/userside/prebuilt">Powerful Desktops
+                                                        </a></h3><!-- End .banner-title -->
+                                                <a href="/userside/prebuilt" class="btn btn-outline-white banner-link">Shop Now<i
+                                                        class="icon-long-arrow-right"></i></a>
+                                            </div><!-- End .banner-content -->
+                                        </div><!-- End .banner -->
+                                    </div><!-- End .col-md-6 col-lg-12 -->
+
+                                    <div class="col-md-6 col-lg-12">
+                                        <div class="banner banner-display mb-0">
+                                            <a href="/userside/products">
+                                                <img src="{% static 'user/assets/images/banners/home/intro/all.png' %}" alt="Banner">
+                                            </a>
+
+                                            <div class="banner-content">
+                                                <h4 class="banner-subtitle text-darkwhite"><a href="/userside/products">New in</a></h4>
+                                                <!-- End .banner-subtitle -->
+                                                <h3 class="banner-title text-white"><a href="/userside/products">All Products
+                                                        </a></h3><!-- End .banner-title -->
+                                                <a href="/userside/products" class="btn btn-outline-white banner-link">Discover Now<i
+                                                        class="icon-long-arrow-right"></i></a>
+                                            </div><!-- End .banner-content -->
+                                        </div><!-- End .banner -->
+                                    </div><!-- End .col-md-6 col-lg-12 -->
+                                </div><!-- End .row row-sm -->
+                            </div><!-- End .intro-banners -->
+                        </div><!-- End .col-lg-4 -->
+                    </div><!-- End .row -->
+
+                    <div class="mb-6"></div><!-- End .mb-6 -->
+
+                    <div class="owl-carousel owl-simple" data-toggle="owl" data-owl-options='{
+                            "nav": false, 
+                            "dots": false,
+                            "margin": 30,
+                            "loop": false,
+                            "responsive": {
+                                "0": {
+                                    "items":2
+                                },
+                                "420": {
+                                    "items":3
+                                },
+                                "600": {
+                                    "items":4
+                                },
+                                "900": {
+                                    "items":5
+                                },
+                                "1024": {
+                                    "items":6
+                                }
+                            }
+                        }'>
+                        <a href="#" class="brand">
+                            <img src="{% static 'user/assets/images/brands/msi.png' %}" alt="Brand Name" style="width: 50px;">
+                        </a>
+
+                        <a href="#" class="brand">
+                            <img src="{% static 'user/assets/images/brands/intel.png' %}" alt="Brand Name" style="width: 50px;">
+                        </a>
+
+                        <a href="#" class="brand">
+                            <img src="{% static 'user/assets/images/brands/asus.png' %}" alt="Brand Name" style="width: 50px;">
+                        </a>
+
+                        <a href="#" class="brand">
+                            <img src="{% static 'user/assets/images/brands/amd.png' %}" alt="Brand Name" style="width: 50px;">
+                        </a>
+
+                        <a href="#" class="brand">
+                            <img src="{% static 'user/assets/images/brands/corsair.png' %}" alt="Brand Name" style="width: 50px;">
+                        </a>
+
+                        <a href="#" class="brand">
+                            <img src="{% static 'user/assets/images/brands/nvidia.png' %}" alt="Brand Name" style="width: 50px;">
+                        </a>
+                    </div><!-- End .owl-carousel -->
+                </div><!-- End .container -->
+            </div><!-- End .bg-lighter -->
+
+            <div class="mb-6"></div><!-- End .mb-6 -->
+
+            <div class="container">
+                <div class="heading heading-center mb-3">
+                    <h2 class="title-lg">Trendy Products</h2><!-- End .title -->
+
+                    <ul class="nav nav-pills justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="trendy-all-link" data-toggle="tab" href="#trendy-all-tab"
+                                role="tab" aria-controls="trendy-all-tab" aria-selected="true">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="trendy-fur-link" data-toggle="tab" href="#trendy-fur-tab" role="tab"
+                                aria-controls="trendy-fur-tab" aria-selected="false">NZXT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="trendy-decor-link" data-toggle="tab" href="#trendy-decor-tab"
+                                role="tab" aria-controls="trendy-decor-tab" aria-selected="false">CoolerMaster</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="trendy-light-link" data-toggle="tab" href="#trendy-light-tab"
+                                role="tab" aria-controls="trendy-light-tab" aria-selected="false">Adata</a>
+                        </li>
+                    </ul>
+                </div><!-- End .heading -->
+
+                <div class="tab-content tab-content-carousel">
+                    <div class="tab-pane p-0 fade show active" id="trendy-all-tab" role="tabpanel"
+                        aria-labelledby="trendy-all-link">
+                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow"
+                            data-toggle="owl" data-owl-options='{
+                                "nav": false, 
+                                "dots": true,
+                                "margin": 20,
+                                "loop": false,
+                                "responsive": {
+                                    "0": {
+                                        "items":2
+                                    },
+                                    "480": {
+                                        "items":2
+                                    },
+                                    "768": {
+                                        "items":3
+                                    },
+                                    "992": {
+                                        "items":4
+                                    },
+                                    "1200": {
+                                        "items":4,
+                                        "nav": true,
+                                        "dots": false
+                                    }
+                                }
+                            }'>
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <a href="/userside/productdetails/1">
+                                        <img src="/media/i5 14600k.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/i5 14600k4.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="product.html">i5 14600k</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        Rs. 37,199 /-
+                                    </div><!-- End .product-price -->
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <a href="/userside/productdetails/13">
+                                        <img src="/media/adata xpg lancer ddr5.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/adata xpg lancer ddr5 2.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/13">ADATA XPG Lancer RGB 16 GB</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        Rs. 5,469 /-
+                                    </div><!-- End .product-price -->
+
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <span class="product-label label-new">NEW</span>
+                                    <a href="/userside/productdetails/10">
+                                        <img src="/media/gigabyte x670e.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/gigabyte x670e 4.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/10">Gigabyte X670E AORUS</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        Rs. 6,700 /-
+                                    </div><!-- End .product-price -->
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <span class="product-label label-sale">30% OFF</span>
+                                    <a href="/userside/productdetails/38">
+                                        <img src="{% static 'user/assets/images/demos/demo-2/products/cmp520.jpg' %}"
+                                            alt="Product image" class="product-image">
+                                        <img src="{% static 'user/assets/images/demos/demo-2/products/cmp520a.jpg' %}"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/38">Cooler Master CMP520</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        <span class="new-price">Rs. 5,200 /-</span>
+                                        <span class="old-price">Rs. 6,700 /-</span>
+                                    </div><!-- End .product-price -->
+
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <a href="/userside/productdetails/50">
+                                        <img src="/media/antesports mp320c.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/antesports mp320c 2.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/50">Ant Esports Mouse Pad-XL</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        Rs. 499
+                                    </div><!-- End .product-price -->
+
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <a href="/userside/productdetails/45">
+                                        <img src="/media/samsung odyssey 34inch.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/samsung odyssey 34inch 4.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/45">Samsung Odyssey G5 Ultra </a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        Rs. 38,999
+                                    </div><!-- End .product-price -->
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <a href="/userside/productdetails/49">
+                                        <img src="/media/corsair hs55.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/corsair hs55 3.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/49">Corsair HS55 Stereo Gaming Wired Headset</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        Rs. 3699
+                                    </div><!-- End .product-price -->
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+                        </div><!-- End .owl-carousel -->
+                    </div><!-- .End .tab-pane -->
+                    <div class="tab-pane p-0 fade" id="trendy-fur-tab" role="tabpanel"
+                        aria-labelledby="trendy-fur-link">
+                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow"
+                            data-toggle="owl" data-owl-options='{
+                                "nav": false, 
+                                "dots": true,
+                                "margin": 20,
+                                "loop": false,
+                                "responsive": {
+                                    "0": {
+                                        "items":2
+                                    },
+                                    "480": {
+                                        "items":2
+                                    },
+                                    "768": {
+                                        "items":3
+                                    },
+                                    "992": {
+                                        "items":4
+                                    },
+                                    "1200": {
+                                        "items":4,
+                                        "nav": true,
+                                        "dots": false
+                                    }
+                                }
+                            }'>
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <span class="product-label label-new">NEW</span>
+                                    <a href="/userside/productdetails/27">
+                                        <img src="/media/nzxt kraken 360.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/nzxt kraken 360 4.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/27">NZXT Kraken 360 RGB</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        Rs. 20845
+                                    </div><!-- End .product-price -->
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <span class="product-label label-sale">30% OFF</span>
+                                    <a href="/userside/productdetails/36">
+                                        <img src="/media/nzxt h6.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/nzxt h6 2.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/36">NZXT H6 Flow</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        <span class="new-price">Rs. 11515</span>
+                                        <span class="old-price">Was Rs. 12,600</span>
+                                    </div><!-- End .product-price -->
+
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+                        </div><!-- End .owl-carousel -->
+                    </div><!-- .End .tab-pane -->
+                    <div class="tab-pane p-0 fade" id="trendy-decor-tab" role="tabpanel"
+                        aria-labelledby="trendy-decor-link">
+                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow"
+                            data-toggle="owl" data-owl-options='{
+                                "nav": false, 
+                                "dots": true,
+                                "margin": 20,
+                                "loop": false,
+                                "responsive": {
+                                    "0": {
+                                        "items":2
+                                    },
+                                    "480": {
+                                        "items":2
+                                    },
+                                    "768": {
+                                        "items":3
+                                    },
+                                    "992": {
+                                        "items":4
+                                    },
+                                    "1200": {
+                                        "items":4,
+                                        "nav": true,
+                                        "dots": false
+                                    }
+                                }
+                            }'>
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <a href="/userside/productdetails/22">
+                                        <img src="/media/cm mwe 650w.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/cm mwe 650w 2.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/22">Cooler Master MWE 650</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        Rs. 5257
+                                    </div><!-- End .product-price -->
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <a href="/userside/productdetails/46">
+                                        <img src="/media/cm mm311.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/cm mm311 4.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/46">Cooler Master MM311</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        Rs. 2255
+                                    </div><!-- End .product-price -->
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+                        </div><!-- End .owl-carousel -->
+                    </div><!-- .End .tab-pane -->
+                    <div class="tab-pane p-0 fade" id="trendy-light-tab" role="tabpanel"
+                        aria-labelledby="trendy-light-link">
+                        <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow"
+                            data-toggle="owl" data-owl-options='{
+                                "nav": false, 
+                                "dots": true,
+                                "margin": 20,
+                                "loop": false,
+                                "responsive": {
+                                    "0": {
+                                        "items":2
+                                    },
+                                    "480": {
+                                        "items":2
+                                    },
+                                    "768": {
+                                        "items":3
+                                    },
+                                    "992": {
+                                        "items":4
+                                    },
+                                    "1200": {
+                                        "items":4,
+                                        "nav": true,
+                                        "dots": false
+                                    }
+                                }
+                            }'>
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <a href="/userside/productdetails/16">
+                                        <img src="/media/adata xpg s11 pro.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/adata xpg s11 pro 2.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/16">XPG ADATA S11Pro</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        Rs. 2899
+                                    </div><!-- End .product-price -->
+
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+                            <div class="product product-11 text-center">
+                                <figure class="product-media">
+                                    <a href="/userside/productdetails/15">
+                                        <img src="/media/adata xpg lancer black ddr5.jpg"
+                                            alt="Product image" class="product-image">
+                                        <img src="/media/adata xpg lancer black ddr5 4.jpg"
+                                            alt="Product image" class="product-image-hover">
+                                    </a>
+
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist"><span>add to
+                                                wishlist</span></a>
+                                    </div><!-- End .product-action-vertical -->
+
+                                </figure><!-- End .product-media -->
+
+                                <div class="product-body">
+                                    <h3 class="product-title"><a href="/userside/productdetails/15">XPG Lancer RGB 16GB</a></h3>
+                                    <!-- End .product-title -->
+                                    <div class="product-price">
+                                        Rs. 5749
+                                    </div><!-- End .product-price -->
+
+                                </div><!-- End .product-body -->
+                                <div class="product-action">
+                                    <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product -->
+                        </div><!-- End .owl-carousel -->
+                    </div><!-- .End .tab-pane -->
+                </div><!-- End .tab-content -->
+            </div><!-- End .container -->
+
+            <div class="container categories pt-6">
+                <h2 class="title-lg text-center mb-4">Shop by Categories</h2><!-- End .title-lg text-center -->
+
+                <div class="row">
+                    <div class="col-6 col-lg-4">
+                        
+                        <div class="banner banner-display banner-link-anim">
+                            <a href="/userside/productfilter_category/1">
+                                <img src="{% static 'user/assets/images/banners/home/cpu3.jpg' %}" alt="Banner">
+                            </a>
+                            
+                            <div class="banner-content banner-content-center">
+                                
+                                <h3 class="banner-title text-white"><a href="/userside/productfilter_category/1">CPU</a></h3>
+                                <!-- End .banner-title -->
+                                <a href="/userside/productfilter_category/1" class="btn btn-outline-white banner-link">Shop Now<i
+                                        class="icon-long-arrow-right"></i></a>
+                                
+                            </div><!-- End .banner-content -->
+                        </div><!-- End .banner -->
+                        
+                    </div><!-- End .col-sm-6 col-lg-3 -->
+                    <div class="col-6 col-lg-4 order-lg-last">
+                        <div class="banner banner-display banner-link-anim">
+                            <a href="/userside/productfilter_category/7">
+                                <img src="{% static 'user/assets/images/banners/home/gpu.jpg' %}" alt="Banner">
+                            </a>
+
+                            <div class="banner-content banner-content-center">
+                                <h3 class="banner-title text-white"><a href="/userside/productfilter_category/7">GPU</a></h3>
+                                <!-- End .banner-title -->
+                                <a href="/userside/productfilter_category/7" class="btn btn-outline-white banner-link">Shop Now<i
+                                        class="icon-long-arrow-right"></i></a>
+                            </div><!-- End .banner-content -->
+                        </div><!-- End .banner -->
+                    </div><!-- End .col-sm-6 col-lg-3 -->
+                    <div class="col-sm-12 col-lg-4 banners-sm">
+                        <div class="row">
+                            <div class="banner banner-display banner-link-anim col-lg-12 col-6">
+                                <a href="/userside/productfilter_category/9">
+                                    <img src="{% static 'user/assets/images/banners/home/monitor.jpg' %}" alt="Banner">
+                                </a>
+
+                                <div class="banner-content banner-content-center">
+                                    <h3 class="banner-title text-white"><a href="/userside/productfilter_category/9">Monitor</a></h3>
+                                    <!-- End .banner-title -->
+                                    <a href="/userside/productfilter_category/9" class="btn btn-outline-white banner-link">Shop Now<i
+                                            class="icon-long-arrow-right"></i></a>
+                                </div><!-- End .banner-content -->
+                            </div><!-- End .banner -->
+
+                            <div class="banner banner-display banner-link-anim col-lg-12 col-6">
+                                <a href="/userside/productfilter_category/6">
+                                    <img src="{% static 'user/assets/images/banners/home/cooler.jpg' %}" alt="Banner' %}">
+                                </a>
+
+                                <div class="banner-content banner-content-center">
+                                    <h3 class="banner-title text-white"><a href="/userside/productfilter_category/6">Coolers</a></h3>
+                                    <!-- End .banner-title -->
+                                    <a href="/userside/productfilter_category/6" class="btn btn-outline-white banner-link">Shop Now<i
+                                            class="icon-long-arrow-right"></i></a>
+                                </div><!-- End .banner-content -->
+                            </div><!-- End .banner -->
+                        </div>
+                    </div><!-- End .col-sm-6 col-lg-3 -->
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+
+            <div class="mb-5"></div><!-- End .mb-6 -->
+
+
+          
+
+            <div class="container">
+                <hr>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="icon-box icon-box-card text-center">
+                            <span class="icon-box-icon">
+                                <i class="icon-rocket"></i>
+                            </span>
+                            <div class="icon-box-content">
+                                <h3 class="icon-box-title">Payment & Delivery</h3><!-- End .icon-box-title -->
+                                <p>Fast shipping in metro areas</p>
+                            </div><!-- End .icon-box-content -->
+                        </div><!-- End .icon-box -->
+                    </div><!-- End .col-lg-4 col-sm-6 -->
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="icon-box icon-box-card text-center">
+                            <span class="icon-box-icon">
+                                <i class="icon-rotate-left"></i>
+                            </span>
+                            <div class="icon-box-content">
+                                <h3 class="icon-box-title">Custom & Pre-builts</h3><!-- End .icon-box-title -->
+                                <p>According to your convience</p>
+                            </div><!-- End .icon-box-content -->
+                        </div><!-- End .icon-box -->
+                    </div><!-- End .col-lg-4 col-sm-6 -->
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="icon-box icon-box-card text-center">
+                            <span class="icon-box-icon">
+                                <i class="icon-life-ring"></i>
+                            </span>
+                            <div class="icon-box-content">
+                                <h3 class="icon-box-title">Quality Support</h3><!-- End .icon-box-title -->
+                                <p>Always online feedback 24/7</p>
+                            </div><!-- End .icon-box-content -->
+                        </div><!-- End .icon-box -->
+                    </div><!-- End .col-lg-4 col-sm-6 -->
+                </div><!-- End .row -->
+
+                <div class="mb-2"></div><!-- End .mb-2 -->
+            </div><!-- End .container -->
+            <div class="blog-posts pt-7 pb-7" style="background-color: #fafafa;">
+                <div class="container">
+                    <h2 class="title-lg text-center mb-3 mb-md-4">From our C-Forums</h2><!-- End .title-lg text-center -->
+
+                    <div class="owl-carousel owl-simple carousel-with-shadow" data-toggle="owl" data-owl-options='{
+                            "nav": false, 
+                            "dots": true,
+                            "items": 3,
+                            "margin": 20,
+                            "loop": false,
+                            "responsive": {
+                                "0": {
+                                    "items":1
+                                },
+                                "600": {
+                                    "items":2
+                                },
+                                "992": {
+                                    "items":3
+                                }
+                            }
+                        }'>
+                        <article class="entry entry-display">
+                            <figure class="entry-media">
+                                <a href="single.html">
+                                    <img src="{% static 'user/assets/images/blog/home/intel.jpg' %}" alt="image desc">
+                                </a>
+                            </figure><!-- End .entry-media -->
+
+                            <div class="entry-body pb-4 text-center">
+                                <div class="entry-meta">
+                                    <a href="#">Jan 22, 2024</a>, 4 Comments
+                                </div><!-- End .entry-meta -->
+
+                                <h3 class="entry-title">
+                                    <a href="single.html">Intel Upcoming Gen</a>
+                                </h3><!-- End .entry-title -->
+
+                                <div class="entry-content">
+                                    <p>Intel Bartlett Lake S, the last hurrah for LGA 1700, could come with 12 P-Core versions, ditching E-Cores for pure desktop performance... </p>
+                                    <a href="single.html" class="read-more">Read More</a>
+                                </div><!-- End .entry-content -->
+                            </div><!-- End .entry-body -->
+                        </article><!-- End .entry -->
+
+                        <article class="entry entry-display">
+                            <figure class="entry-media">
+                                <a href="single.html">
+                                    <img src="{% static 'user/assets/images/blog/home/evga.jpg' %}" alt="image desc">
+                                </a>
+                            </figure><!-- End .entry-media -->
+
+                            <div class="entry-body pb-4 text-center">
+                                <div class="entry-meta">
+                                    <a href="#">Jan 18, 2024</a>, 2 Comments
+                                </div><!-- End .entry-meta -->
+
+                                <h3 class="entry-title">
+                                    <a href="single.html">EVGA exits MB market ?</a>
+                                </h3><!-- End .entry-title -->
+
+                                <div class="entry-content">
+                                    <p>EVGA is reportedly on the cusp of shutting down its motherboard business. This will be the second major product line the company</p>
+                                    <a href="single.html" class="read-more">Read More</a>
+                                </div><!-- End .entry-content -->
+                            </div><!-- End .entry-body -->
+                        </article><!-- End .entry -->
+
+                        <article class="entry entry-display">
+                            <figure class="entry-media">
+                                <a href="single.html">
+                                    <img src="{% static 'user/assets/images/blog/home/asrock.jpg' %}" alt="image desc">
+                                </a>
+                            </figure><!-- End .entry-media -->
+
+                            <div class="entry-body pb-4 text-center">
+                                <div class="entry-meta">
+                                    <a href="#">Feb 8, 2024</a>, 2 Comments
+                                </div><!-- End .entry-meta -->
+
+                                <h3 class="entry-title">
+                                    <a href="single.html">ASRock, The Possibility Of Making NVIDIA GPUs</a>
+                                </h3><!-- End .entry-title -->
+
+                                <div class="entry-content">
+                                    <p>NVIDIA is indeed a dominant player, and ASRock's response seems to suggest that it would be a tricky...</p>
+                                    <a href="single.html" class="read-more">Read More</a>
+                                </div><!-- End .entry-content -->
+                            </div><!-- End .entry-body -->
+                        </article><!-- End .entry -->
+                    </div><!-- End .owl-carousel -->
+                </div><!-- container -->
+
+                <div class="more-container text-center mb-0 mt-3">
+                    <a href="/userside/forums" class="btn btn-outline-darker btn-more"><span>View more forums</span><i
+                            class="icon-long-arrow-right"></i></a>
+                </div><!-- End .more-container -->
+            </div>
+           
+            
+            <div class="cta cta-display bg-image pt-4 pb-4" style="background-image: url('/static/user/assets/images/backgrounds/cta/bg-6.jpg');">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-9 col-xl-8">
+                            <div class="row no-gutters flex-column flex-sm-row align-items-sm-center">
+                                <div class="col">
+                                    <h3 class="cta-title text-white">Sign Up & Get 10% Off</h3><!-- End .cta-title -->
+                                    <p class="cta-desc text-white">BuildWizard presents the best in Custom PC Website</p><!-- End .cta-desc -->
+                                </div><!-- End .col -->
+
+                                <div class="col-auto">
+                                    <a href="/userside/register" class="btn btn-outline-white"><span>SIGN UP</span><i class="icon-long-arrow-right"></i></a>
+                                </div><!-- End .col-auto -->
+                            </div><!-- End .row no-gutters -->
+                        </div><!-- End .col-md-10 col-lg-9 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End .cta -->
+        </main><!-- End .main -->
+
+        <!-- Footer here  -->
+       {%include "user/footer.html" %}
+        <!-- End footer  -->
+
+    </div><!-- End .page-wrapper -->
+
+    <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
+
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <!-- End .mobil-menu-overlay -->
+
+    <div class="mobile-menu-container">
+        <div class="mobile-menu-wrapper">
+            <span class="mobile-menu-close"><i class="icon-close"></i></span>
+
+            <form action="#" method="get" class="mobile-search">
+                <label for="mobile-search" class="sr-only">Search</label>
+                <input type="search" class="form-control" name="mobile-search" id="mobile-search" placeholder="Search in..." required>
+                <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+            </form>
+            
+            <nav class="mobile-nav">
+                <ul class="mobile-menu">
+
+                    <!-- HOME -->
+                    <li class="active">
+                        <a href="/userside/home">Home</a>
+
+                    </li>
+
+                    <!-- LOGIN & REGISTER -->
+                    <li>
+                        <a href="/userside/register">Login / Register</a>
+                    </li>
+
+                    <!-- PRE-BUILTS -->
+                    <li>
+                        <a href="/userside/prebuilt">Pre-Builts</a>
+                        <ul>
+                            <li><a href="category-list.html">Gaming Rigs</a></li>
+                            <li><a href="category-2cols.html">Productivity Rigs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CUSTOM PC -->
+                    <li>
+                        <a href="/userside/customization" class="sf-with-ul">Custom PCs (by own)</a>
+                        <!-- <ul>
+
+                            <li><a href="product-extended.html"><span>Extended Info<span class="tip tip-new">New</span></span></a></li>
+
+                        </ul> -->
+                    </li>
+
+                    <!-- SHOP -->
+                    <li>
+                        <a href="/userside/products">Shop</a>
+                        <ul>
+                            <li>
+                                <a href="about.html">Processor</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Motherboard</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Ram</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Storage</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">SMPS</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">CPU Cooler</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Cabinet</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Monitor</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Accessories</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Forums -->
+                    <li>
+                        <a href="/userside/forums">Forums</a>
+                    </li>
+
+                </ul>
+            </nav><!-- End .mobile-nav -->
+
+            <div class="social-icons">
+                <a href="#" class="social-icon" target="_blank" title="Facebook"><i class="icon-facebook-f"></i></a>
+                <a href="#" class="social-icon" target="_blank" title="Twitter"><i class="icon-twitter"></i></a>
+                <a href="#" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
+                <a href="#" class="social-icon" target="_blank" title="Youtube"><i class="icon-youtube"></i></a>
+            </div><!-- End .social-icons -->
+        </div><!-- End .mobile-menu-wrapper -->
+    </div><!-- End .mobile-menu-container -->
+
+    <!-- Sign in / Register Modal -->
+    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="icon-close"></i></span>
+                    </button>
+
+                    <div class="form-box">
+                        <div class="form-tab">
+                            <ul class="nav nav-pills nav-fill" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="signin-tab" data-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true">Sign In</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="tab-content-5">
+                                <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="singin-email">Username or email address *</label>
+                                            <input type="text" class="form-control" id="singin-email" name="singin-email" required>
+                                        </div><!-- End .form-group -->
+
+                                        <div class="form-group">
+                                            <label for="singin-password">Password *</label>
+                                            <input type="password" class="form-control" id="singin-password" name="singin-password" required>
+                                        </div><!-- End .form-group -->
+
+                                        <div class="form-footer">
+                                            <button type="submit" class="btn btn-outline-primary-2">
+                                                <span>LOG IN</span>
+                                                <i class="icon-long-arrow-right"></i>
+                                            </button>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="signin-remember">
+                                                <label class="custom-control-label" for="signin-remember">Remember Me</label>
+                                            </div><!-- End .custom-checkbox -->
+
+                                            <a href="#" class="forgot-link">Forgot Your Password?</a>
+                                        </div><!-- End .form-footer -->
+                                    </form>
+                                    <div class="form-choice">
+                                        <p class="text-center">or sign in with</p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <a href="#" class="btn btn-login btn-g">
+                                                    <i class="icon-google"></i>
+                                                    Login With Google
+                                                </a>
+                                            </div><!-- End .col-6 -->
+                                            <div class="col-sm-6">
+                                                <a href="#" class="btn btn-login btn-f">
+                                                    <i class="icon-facebook-f"></i>
+                                                    Login With Facebook
+                                                </a>
+                                            </div><!-- End .col-6 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .form-choice -->
+                                </div><!-- .End .tab-pane -->
+                                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="register-email">Your email address *</label>
+                                            <input type="email" class="form-control" id="register-email" name="register-email" required>
+                                        </div><!-- End .form-group -->
+
+                                        <div class="form-group">
+                                            <label for="register-password">Password *</label>
+                                            <input type="password" class="form-control" id="register-password" name="register-password" required>
+                                        </div><!-- End .form-group -->
+
+                                        <div class="form-footer">
+                                            <button type="submit" class="btn btn-outline-primary-2">
+                                                <span>SIGN UP</span>
+                                                <i class="icon-long-arrow-right"></i>
+                                            </button>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="register-policy" required>
+                                                <label class="custom-control-label" for="register-policy">I agree to the <a href="#">privacy policy</a> *</label>
+                                            </div><!-- End .custom-checkbox -->
+                                        </div><!-- End .form-footer -->
+                                    </form>
+                                    <div class="form-choice">
+                                        <p class="text-center">or sign in with</p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <a href="#" class="btn btn-login btn-g">
+                                                    <i class="icon-google"></i>
+                                                    Login With Google
+                                                </a>
+                                            </div><!-- End .col-6 -->
+                                            <div class="col-sm-6">
+                                                <a href="#" class="btn btn-login  btn-f">
+                                                    <i class="icon-facebook-f"></i>
+                                                    Login With Facebook
+                                                </a>
+                                            </div><!-- End .col-6 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .form-choice -->
+                                </div><!-- .End .tab-pane -->
+                            </div><!-- End .tab-content -->
+                        </div><!-- End .form-tab -->
+                    </div><!-- End .form-box -->
+                </div><!-- End .modal-body -->
+            </div><!-- End .modal-content -->
+        </div><!-- End .modal-dialog -->
+    </div><!-- End .modal -->
+   
+    <!-- Plugins JS File -->
+    <script src="{% static 'user/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'user/assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'user/assets/js/jquery.hoverIntent.min.js' %}"></script>
+    <script src="{% static 'user/assets/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'user/assets/js/superfish.min.js' %}"></script>
+    <script src="{% static 'user/assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'user/assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- Main JS File -->
+    <script src="{% static 'user/assets/js/main.js' %}"></script>
+    <!-- Preloader script -->
+    <script src="{% static 'user/assets/js/preloader.js' %}"></script>
+
+
+</body>
+
+</html>

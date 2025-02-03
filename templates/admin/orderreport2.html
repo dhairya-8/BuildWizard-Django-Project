@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<center>
+    <h1>Order Report | BuildWizard</h1>
+</center>
+<hr />
+
+Date : {% now "SHORT_DATETIME_FORMAT" %}
+
+<form method="post" action="/adminside/reportorder_userwise_process">
+    {% csrf_token %}
+    User Name : <select name="txt1">
+        <option value="" selected="Username">Choose</option>
+        {% for i in mydata %}
+        <option value="{{i.0}}">{{i.1}}</option>
+        {% endfor %}
+    </select>
+    <input type="submit"/>
+</form>
+
+<h5>
+<input type="button" onclick="window.print();" value="PRINT" > <a href='/adminside/index'><button>HOME</button></a>
+</h5>
+
+{% if mydata1 %}
+<table align="center" border="1">
+    <thead>
+        <tr>
+            <th>Order Id</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>User Name</th>
+            <th>Mode Of Payment</th>
+            <th>Shipping Name</th>
+            <th>Shipping Address</th>
+            <th>Shipping Mobile</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for i in mydata1 %}
+
+        <tr>
+            <td align="center">{{i.0}}</td>
+            <td>{{i.1}}</td>
+            <td>{{i.2}}</td>
+            <td>{{i.3}}</td>
+            <td>{{i.4}}</td>
+            <td>{{i.5}}</td>
+            <td>{{i.6}}</td>
+            <td>{{i.7}}</td>
+
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+{% endif %}
+
+
+

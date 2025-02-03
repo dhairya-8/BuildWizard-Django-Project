@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<center>
+    <h1>Product Report | BuildWizard</h1>
+</center>
+<hr />
+
+Date : {% now "SHORT_DATETIME_FORMAT" %}
+
+
+<form method="post" action="/adminside/reportproduct_brand_process">
+    {% csrf_token %}
+    Brand : <select name="txt1">
+        <option value="" selected="Brand">Choose</option>
+        {% for i in mydata %}
+        <option value="{{i.0}}">{{i.1}}</option>
+        {% endfor %}
+    </select>
+    <input type="submit"/>
+</form>
+<h5>
+<input type="button" onclick="window.print();" value="PRINT" > <a href='/adminside/index'><button>HOME</button></a>
+</h5>
+{% if mydata1 %}
+<table align="center" border="1">
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Name</th>
+            <th>Details</th>
+            <th>Price</th>
+            <th>Category Name</th>
+            <th>Brand Name</th>
+            <th>Image</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for i in mydata1 %}
+
+        <tr>
+            <td align="center">{{i.0}}</td>
+            <td>{{i.1}}</td>
+            <td>{{i.2}}</td>
+            <td>{{i.3}}</td>
+            <td>{{i.4}}</td>
+            <td>{{i.5}}</td>
+            <td><img style='width:100px;' src='/media/{{i.6}}'/></td>
+
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+{% endif %}

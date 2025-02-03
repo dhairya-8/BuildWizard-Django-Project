@@ -1,0 +1,248 @@
+{% extends 'user/base.html' %}
+{% load static %}
+{% block title %} BuildWizard | Checkout {% endblock %}
+{% block extra_head %} {% endblock %}
+
+{% block content %}
+
+<div class="page-header text-center" style="background-image: url('/static/user/assets/images/page-header-bg.jpg')">
+	<div class="container">
+		<h1 class="page-title">Checkout<span>Shop</span></h1>
+	</div><!-- End .container -->
+</div><!-- End .page-header -->
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+	<div class="container">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="/userside/home">Home</a></li>
+			<li class="breadcrumb-item"><a href="/userside/products">Shop</a></li>
+			<li class="breadcrumb-item active" aria-current="/userside/checkout">Checkout</li>
+		</ol>
+	</div><!-- End .container -->
+</nav><!-- End .breadcrumb-nav -->
+
+<div class="page-content">
+	<div class="checkout">
+		<div class="container">
+			<form action="/userside/orderplace" method="post" enctype="multipart/form-data" id="myform">
+				{% csrf_token %}
+				<div class="row">
+					<div class="col-lg-9">
+						<h2 class="checkout-title">Billing Details</h2><!-- End .checkout-title -->
+						<div class="row">
+							<div class="col-sm-6">
+								<label>Shipping Name *</label>
+								<input type="text" class="form-control" onkeyup="Validatestring(this)" name="name"
+									id="name" required>
+							</div><!-- End .col-sm-6 -->
+						</div><!-- End .row -->
+
+						<label>Shipping address *</label>
+						<textarea class="form-control" cols="30" rows="4" onkeyup="Validatestring(this)"
+							placeholder="Please enter your shipping address" name="address" id="address"></textarea>
+						<div class="row">
+							<div class="col-sm-6">
+								<label>Shipping Phone Number*</label>
+								<input type="tel" class="form-control" maxlength="10" onkeyup="Validate(this)"
+									name="mnumber" id="mnumber" required>
+							</div><!-- End .col-sm-6 -->
+
+						</div><!-- End .row -->
+
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="checkout-create-acc">
+							<label class="custom-control-label" for="checkout-create-acc">Create an
+								account?</label>
+						</div><!-- End .custom-checkbox -->
+
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="checkout-diff-address">
+							<label class="custom-control-label" for="checkout-diff-address">Ship to a
+								different address?</label>
+						</div><!-- End .custom-checkbox -->
+
+					</div><!-- End .col-lg-9 -->
+					<aside class="col-lg-3">
+						<div class="summary">
+							<h3 class="summary-title">Your Order</h3><!-- End .summary-title -->
+
+							<table class="table table-summary">
+								<thead>
+									<tr>
+										<th>Product</th>
+										<th>Total</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									{% for i in mydata %}
+									<tr>
+										<td><a href="/userside/productdetails/{{i.1}}">{{i.2}}</a></td>
+										<td>Rs. {{i.3}}</td>
+									</tr>
+									{% endfor %}
+									<tr class="summary-subtotal">
+										<td>Subtotal:</td>
+										<td>Rs. {{total}}</td>
+									</tr><!-- End .summary-subtotal -->
+									<tr>
+										<td>Shipping:</td>
+										<td>Free shipping</td>
+									</tr>
+									<tr class="summary-total">
+										<td>Total:</td>
+										<td>Rs. {{total}}</td>
+									</tr><!-- End .summary-total -->
+
+								</tbody>
+							</table><!-- End .table table-summary -->
+
+							<div class="accordion-summary" id="accordion-payment">
+								<div class="card">
+									<div class="card-header" id="heading-3">
+										<h2 class="card-title">
+											<input type='radio' class="collapsed" value="COD" name="mop" role="button"
+												data-toggle="collapse" href="#collapse-3" aria-expanded="false"
+												aria-controls="collapse-3"> Cash on
+											delivery
+											{% comment %} <a class="collapsed" role="button" data-toggle="collapse"
+												href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+												Cash on delivery
+											</a> {% endcomment %}
+										</h2><br>
+									</div><!-- End .card-header -->
+									<div id="collapse-3" class="collapse" aria-labelledby="heading-3"
+										data-parent="#accordion-payment">
+										<div class="card-body">Available only if Subtotal is below Rs. 5500
+											/- .
+										</div><!-- End .card-body -->
+									</div><!-- End .collapse -->
+								</div><!-- End .card -->
+
+								<div class="card">
+									<div class="card-header" id="heading-4">
+										<h2 class="card-title">
+											<input type='radio' class="collapsed" value="UPI" name="mop" role="button"
+												data-toggle="collapse" href="#collapse-4" aria-expanded="false"
+												aria-controls="collapse-4"> UPI
+											{% comment %} <a class="collapsed" role="button" data-toggle="collapse"
+												href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+												UPI <small class="float-right paypal-link">Scan QR
+													Code</small>
+											</a> {% endcomment %}
+										</h2><br>
+									</div><!-- End .card-header -->
+									<div id="collapse-4" class="collapse" aria-labelledby="heading-4"
+										data-parent="#accordion-payment">
+										<div class="card-body">
+											<img src="https://storage.googleapis.com/dara-c1b52.appspot.com/daras_ai/media/a3202e58-17ef-11ee-9a70-8e93953183bb/cleaned_qr.png"
+												style="width:100px;height:100px;">
+
+											<p><b>Either Scan Image or Enter UPI ID</b></p>
+										</div><!-- End .card-body -->
+										<div class="card-body" id="upitxt">
+											<input type="radio" name="upi_method" value="GPay"
+												onchange="return enter_upi_id()">
+											<img src="https://t3.ftcdn.net/jpg/06/16/18/18/360_F_616181843_l404nbV07vMiXDZ1IhWiqZRDpetpuigu.jpg"
+												style="width: 150px;">
+											<br>
+											<input class="form-control uip_id" type="varchar" name="txt1"
+												placeholder="UPI ID" required>
+										</div>
+									</div><!-- End .collapse -->
+								</div><!-- End .card -->
+
+								<div class="card">
+									<div class="card-header" id="heading-5">
+										<h2 class="card-title">
+											<input type='radio' class="collapsed" value="Debit/Credit card" name="mop"
+												role="button" data-toggle="collapse" href="#collapse-5"
+												aria-expanded="false" aria-controls="collapse-5"> Debit / Credit Card
+											{% comment %} <a class="collapsed" role="button" data-toggle="collapse"
+												href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+												Debit / Credit Card
+												<img src="{% static 'user/assets/images/payments-summary.png' %}"
+													alt="payments cards">
+											</a> {% endcomment %}
+										</h2>
+									</div><!-- End .card-header -->
+									<div id="collapse-5" class="collapse" aria-labelledby="heading-5"
+										data-parent="#accordion-payment">
+										<div class="card-body">Enter Card Details<br>
+											<label for="">Name<span>*</span></label>
+											<input class="form-control" type="varchar" name="txt1" placeholder="Name">
+											<label for="">Card No<span>*</span></label>
+											<input class="form-control" type="number" name="txt2"
+												placeholder="4134 - 1024 - 3640">
+											<label for="">CVV<span>*</span></label>
+											<input class="form-control" type="number" name="txt3" placeholder="Card No">
+										</div><!-- End .card-body -->
+									</div><!-- End .collapse -->
+								</div><!-- End .card -->
+							</div><!-- End .accordion -->
+
+							<button type="submit" class="btn btn-outline-primary-2 btn-order btn-block">
+								<span class="btn-text">Place Order</span>
+								<span class="btn-hover-text">Place Order</span>
+							</button>
+
+						</div><!-- End .summary -->
+					</aside><!-- End .col-lg-3 -->
+				</div><!-- End .row -->
+			</form>
+		</div><!-- End .container -->
+	</div><!-- End .checkout -->
+</div><!-- End .page-content -->
+
+{% endblock %}
+
+{% block extra_script %}
+
+<script>
+	// validate signup form on keyup and submit
+	$("#myform").validate({
+		rules: {
+
+			name: {
+				required: true,
+				minlength: 3
+			},
+			mnumber: {
+				required: true,
+				minlength: 10,
+				maxlength: 10
+			},
+			address: {
+				required: true,
+				minlength: 10
+			},
+		},
+		messages: {
+
+			name: {
+				required: "Please Enter Name",
+				minlength: "Your name must consist of at least 3 characters"
+			},
+			mnumber: {
+				required: "Please Enter Your Mobile no.",
+				minlength: "Enter Your 10 digit Mobile no. only",
+				maxlength: "Enter Your 10 digit Mobile no. only",
+			},
+			address: {
+				required: "Please Enter Address",
+				minlength: "Your address must consist of at least 10 characters"
+			},
+		}
+	});
+
+
+	function Validate(no) {
+		no.value = no.value.replace(/[^ 0-9\n\r]+/g, '');
+	}
+
+	function Validatestring(no) {
+		no.value = no.value.replace(/[^ a-z A-Z\n\r]+/g, '');
+	}
+
+</script>
+
+{% endblock %}
